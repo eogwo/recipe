@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= recipeDetails.title %></title>
+</head>
+<body>
+    <h1><%= recipeDetails.title %></h1>
+    <img src="<%= recipeDetails.image %>" alt="<%= recipeDetails.title %>">
+    <h2>Ingredients:</h2>
+    <ul>
+        <% recipeDetails.extendedIngredients.forEach(ingredient => { %>
+            <li><%= ingredient.original %></li>
+        <% }); %>
+    </ul>
+    <h2>Instructions:</h2>
+    <p><%- recipeDetails.instructions || 'No instructions available.' %></p>
+    
+    <a href="/finder">Back To Search</a>
+</body>
+</html>
