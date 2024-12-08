@@ -4,7 +4,7 @@
   "main": "recipeServer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node recipeServer.js"
+    "start": "node recipeServer.js 5001"
   },
   "keywords": [],
   "author": "",
